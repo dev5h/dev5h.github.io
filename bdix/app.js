@@ -31,7 +31,8 @@ let observer = new IntersectionObserver((entries, observer) => {
       image.setAttribute("src", sourceUrl);
 
       image.onload = () => {
-        console.log("Image loaded");
+        var parent = image.parentElement;
+        parent.removeChild(parent.querySelector(".prev-loader-wrapper"));
       };
 
       // Removing the observer
