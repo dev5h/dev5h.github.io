@@ -217,3 +217,16 @@ img.logo-img {
   padding: 2rem;
   font-family: "ps_bold", sans-serif;
 }
+.preview-parent-container {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+.preview-text {
+  text-align: center;
+  padding: 10px;
+}
