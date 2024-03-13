@@ -49,3 +49,53 @@ body {
   align-items: center;
   gap: 2rem;
 }
+.title-line-1 {
+  font-family: "ps_black", sans-serif;
+  font-weight: bold;
+  font-size: 32pt;
+}
+
+img.logo-img {
+  height: 7rem;
+}
+
+.details-container {
+  background: #fff;
+  width: 80vw;
+  margin: auto;
+  margin-top: -6rem;
+  border-radius: 21px;
+  box-shadow: 0px 4px 19px 0px #00000033;
+}
+
+.desc-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 22px;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+.get-app-btn {
+  background: #2bff67;
+  padding: 18px 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.desc-container {
+  width: 77%;
+  padding: 0px 22px;
+  padding-bottom: 2rem;
+  line-height: 24px;
+}
+
+.desc-row h2 {
+  padding: 0px;
+  margin: 0px;
+}
