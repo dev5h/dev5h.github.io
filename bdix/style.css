@@ -150,4 +150,5 @@ img.logo-img {
 }
 .image-container img {
   width: 165px;
+  position: relative;
 }
