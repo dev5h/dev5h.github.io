@@ -96,3 +96,58 @@ img.logo-img {
   padding: 0px;
   margin: 0px;
 }
+
+/* Img */
+.scrollable-container {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.scrollable-content {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px; /* Adjust spacing between images */
+}
+
+.image-placeholder {
+  background-color: #eee;
+  width: 100%;
+  height: 200px; /* Adjust height of placeholder */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-placeholder img {
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 0.5; /* Adjust opacity of placeholder image */
+}
+
+.image-description {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.image-description strong {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.image-description span {
+  font-style: italic;
+  color: #888;
+}
+.image-container img {
+  width: 165px;
+}
