@@ -33,6 +33,7 @@ let observer = new IntersectionObserver((entries, observer) => {
       image.onload = () => {
         var parent = image.parentElement;
         parent.removeChild(parent.querySelector(".prev-loader-wrapper"));
+        parent.style.background = "#FFFFFF";
       };
 
       // Removing the observer
@@ -44,3 +45,26 @@ let observer = new IntersectionObserver((entries, observer) => {
 document.querySelectorAll(".lazy").forEach((el) => {
   observer.observe(el);
 });
+
+// Slideshow buttons
+document
+  .querySelector(".nav-button-left")
+  .addEventListener("click", function () {
+    scrollSlider(-1);
+  });
+document
+  .querySelector(".nav-button-right")
+  .addEventListener("click", function () {
+    scrollSlider(1);
+  });
+
+// Function to scroll the slider by one unit
+function scrollSlider(direction) {
+  const slider = document.querySelector(".preview-parent-container");
+  const scrollAmount = slider.clientWidth * direction; // Width of one slide
+
+  slider.scrollTo({
+    left: slider.scrollLeft + scrollAmount,
+    behavior: "smooth", // Smooth scroll effect
+  });
+}
