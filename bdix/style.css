@@ -376,3 +376,10 @@ p.about-maintainer {
   -moz-user-select: none;
   -ms-user-select: none;
 }
+.title-line-3 {
+  display: inline-block;
+  background: #165c1d5c;
+  padding: 5px 10px;
+  border-radius: 9px;
+  margin-top: 6px;
+}
