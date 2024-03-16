@@ -84,6 +84,8 @@ img.logo-img {
   gap: 6px;
   border-radius: 8px;
   cursor: pointer;
+  color: #000;
+  text-decoration: none;
 }
 
 .desc-container {
@@ -382,4 +384,51 @@ p.about-maintainer {
   padding: 5px 10px;
   border-radius: 9px;
   margin-top: 6px;
+}
+img.mart-ic {
+  height: 24px;
+}
+
+a.dl-btn {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 9px;
+  margin: 5px;
+}
+
+.row-1 {
+  display: flex;
+  padding: 13px;
+  font-family: "ps_bold", sans-serif;
+  align-items: center;
+  gap: 8px;
+}
+
+a.dl-btn.dl-direct {
+  background: #2bff67;
+  color: #000;
+}
+
+.block-download {
+  padding: 1.5rem;
+}
+
+.row-1 {
+}
+
+a.dl-btn.dl-github {
+  background: #000;
+  color: #fff;
+}
+
+a.dl-btn.dl-apkpure {
+  background: #ffffff;
+  color: #0a3d24;
+  border: 1px solid #9f9f9f;
+}
+img.mart-ic.mic-gh {
+  filter: invert(1);
+}
+html {
+  scroll-behavior: smooth;
 }
