@@ -223,6 +223,10 @@ img.logo-img {
   text-align: center;
   padding: 2rem;
   font-family: "ps_bold", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 .preview-parent-container {
   display: flex;
@@ -431,4 +435,12 @@ img.mart-ic.mic-gh {
 }
 html {
   scroll-behavior: smooth;
+}
+.footer svg {
+  fill: #f44336;
+}
+
+.footer a {
+  color: #009454;
+  text-decoration: none;
 }
