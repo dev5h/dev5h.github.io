@@ -4,18 +4,15 @@ body {
   background: #141612;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   font-family: "Nunito", sans-serif;
 }
 
 .body-container {
   color: #fff;
-  text-align: center;
   font-family: "Nunito", sans-serif;
   position: relative;
+  padding: 6px 20px;
+  text-align: center;
 }
 .item-line {
   display: flex;
@@ -41,6 +38,8 @@ body {
   font-size: 20pt;
   padding: 18px 0px;
   font-weight: 800;
+  box-sizing: border-box;
+  text-align: center;
 }
 .created-by-me-slug {
   font-weight: bold;
@@ -71,4 +70,53 @@ span.name {
   color: #cddc39;
   text-transform: uppercase;
   border-bottom: 2px solid #00b381;
+}
+img.img-dp {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+}
+
+.dp-image-container {
+  margin: auto;
+  margin-top: 1rem;
+  position: relative;
+  height: 16rem;
+  width: 16rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dp-image-rotor {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: 3px dashed #1cffea;
+  border-left: dashed #00ff2a;
+  border-top: dashed yellow;
+  border-bottom: dashed #ff233c;
+  border-radius: 50%;
+  animation: rotateDiv 17s infinite linear;
+}
+@keyframes rotateDiv {
+      from {
+          transform: rotate(0deg);
+      }
+      to {
+          transform: rotate(360deg);
+      }
+  }
+
+  section.view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    max-width: 45rem;
+    margin: auto;
+    padding: 6px 12px;
+    box-sizing: border-box;
 }
